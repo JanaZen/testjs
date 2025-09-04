@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Lottie animace</title>
+  <!-- Lottie knihovna -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+<body style="display:flex; justify-content:center; align-items:center; height:100vh; background:#222;">
+
+  <!-- Místo, kde se animace vykreslí -->
+  <div id="lottie-container" style="width:400px; height:400px;"></div>
+
+  <script>
+    lottie.loadAnimation({
+      container: document.getElementById('lottie-container'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'linka.json' // název tvého JSON souboru
+    });
+  </script>
+
+</body>
+</html>
